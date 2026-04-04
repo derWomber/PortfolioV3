@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Sddystopian";
+  src: url("assets/Sddystopiandemo-GO7xa.otf") format("opentype");
+}
+
+.filler {
+  height: 100vh;
+  width: 100vw;
+}
+
+:root {
+  --BG: #0a0f1e;
+  --Surface: #111827;
+  --Surface2: #1a2540;
+  --Accent: #00d4ff;
+  --WarmAcc: #f59e0b;
+  --Borders: #1e3a5f;
+  --Text: #f0f4ff;
+  --Muted: #8b9db0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.skills-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+  text-align: center;
+  color: var(--Muted);
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-card {
+  color: var(--Text);
+  background-color: var(--Surface);
+  border: var(--Borders) 1px solid;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--Surface2);
+  font-size: 10px;
+  padding: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-radius: 15px 15px 0px 0px;
+}
+.pk {
+  width: fit-content;
+  height: 18px;
+  padding: 2px 7px;
+  border: 1px solid rgb(30, 58, 95);
+  display: block;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 9px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.HC {
+  width: 100%;
+  background-color: var(--Surface);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: small;
+  color: var(--Muted);
+  padding: 20px;
+}
+
+.web {
+  color: var(--Accent);
+  font-size: small;
+}
+
+.PY {
+  width: 100%;
+  background-color: var(--Surface);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: small;
+  color: var(--Muted);
+  padding: 20px;
+  border-bottom: 1px solid var(--Borders);
+  border-top: 1px solid var(--Borders);
+}
+
+.TS {
+  width: 100%;
+  background-color: var(--Surface);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: small;
+  color: var(--Muted);
+  padding: 20px;
+  border-radius: 0px 0px 15px 15px;
+}
+/*education card*/
+.education-container {
+  width: 100%;
+}
+
+.education-1,
+.education-2,
+.education-3 {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid var(--Borders);
+}
+
+.education-3 {
+  border: none;
+}
+
+.sub-education-dates {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-education-text {
+  width: 70%;
+  font-size: small;
+  text-align: start;
+}
+
+/*Languages*/
+
+.languages {
+  width: 100%;
+  padding: 0px 20px;
+  border-bottom: 1px solid var(--Borders);
+
+}
+
+.languages :nth-child(4) {
+  border-bottom: none;
+}
+
+.arabic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+  font-size: x-small;
+  border-bottom: 1px solid var(--Borders);
+}
+.level {
+  width: 48px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Accent);
+  background-color: #00d5ff1c;
+  border-radius: 3px;
+}
+
+.language-status {
+  margin-left: auto;
+  color: var(--Muted);
+}
+
+/*hobbies*/
+
+.hobbies{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.items{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hobbys-item{
+  border: 1px solid var(--Borders);
+  padding: 10px;
+  width: fit-content;
+  font-size: x-small;
+  color: var(--Muted);
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.hobbys-item:hover{
+  border: 1px solid var(--Accent);
+  background-color: #00e5ff46;
+}
+
+#tachCard:hover{
+  border: 1px solid var(--Accent);
+  box-shadow: 0 0 52px rgba(0, 212, 255, 0.4);
+  transform: translateY(-5px);
+}
+#educationCard:hover{
+  border: 1px solid var(--WarmAcc);
+  box-shadow: 0 0 52px rgba(245, 158, 11, 0.4);
+  transform: translateY(-5px);
+}
+#languagesCard:hover{
+  border: 1px solid var(--Accent);
+  box-shadow: 0 0 52px rgba(0, 212, 255, 0.4);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 800px) {
+  .skills-title {
+    font-size: 8px;
+  }
+}
+
+.orange {
+  color: var(--WarmAcc);
+  font-size: x-small;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+.muted {
+  color: var(--Muted);
+  font-size: x-small;
+  margin-left: 5px;
+  margin-top: 7px;
+}

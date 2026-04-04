@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta
+      name="description"
+      content="Youssef Beddouch – Fachinformatiker für Anwendungsentwicklung aus Salé, Marokko. Erfahrung in HTML, CSS, JavaScript und Python. Offen für neue Chancen in Deutschland."
+    />
+    <meta name="author" content="Youssef Beddouch" />
+    <meta
+      name="keywords"
+      content="Youssef Beddouch, Fachinformatiker, Anwendungsentwicklung, Webentwickler, beddouch.de"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Youssef Beddouch | Fachinformatiker AE"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio von Youssef Beddouch – Webentwickler mit Erfahrung in HTML, CSS, JS und Python."
+    />
+    <meta property="og:url" content="https://beddouch.de" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Youssef Beddouch | Fachinformatiker für Anwendungsentwicklung</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Youssef Beddouch",
+        "url": "https://beddouch.de",
+        "email": "youssef@beddouch.de",
+        "telephone": "+212770225849",
+        "jobTitle": "Fachinformatiker für Anwendungsentwicklung",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Salé",
+          "addressCountry": "MA"
+        },
+        "sameAs": [
+          "https://github.com/derWomber",
+          "https://www.linkedin.com/in/youssef-beddouch/",
+          "https://www.instagram.com/derjosephb/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#fff"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#landing" id="home_sidebar">Startseite</a></li>
+        <li><a href="#SBS" id="education_sidebar">Bildung</a></li>
+        <li><a href="#projekte" id="projects_sidebar">Projekte</a></li>
+        <li>
+          <select class="language-change" onchange="switchLanguage(this.value)">
+            <option value="de">DE 🇩🇪</option>
+            <option value="en">EN 🇬🇧</option>
+            <option value="fr">FR 🇫🇷</option>
+          </select>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div class="logo">JosephB&nbsp;<span>// Youssef Beddouch</span></div>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#landing" id="home"> <span> Startseite</span></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#SBS" id="education"><span>Bildung</span></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#projekte" id="projects"><span>Projekte</span></a>
+        </li>
+        <li class="hideOnMobile">
+          <select class="language-change" onchange="switchLanguage(this.value)">
+            <option value="de" onclick="hideSidebar()">DE 🇩🇪</option>
+            <option value="en" onclick="hideSidebar()">EN 🇬🇧</option>
+            <option value="fr" onclick="hideSidebar()">FR 🇫🇷</option>
+          </select>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#fff"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="landing" id="landing">
+      <div class="container">
+        <div class="pfp">👨‍💻</div>
+        <h1>Youssef Beddouch</h1>
+        <div class="role" id="role">
+          Fachinformatiker für Anwendungsentwicklung
+        </div>
+        <div class="info-bar">
+          <div class="availability-dot"></div>
+          <div class="on" id="on">Offen für neue Chancen · Umzugsbereit</div>
+        </div>
+        <p class="on" id="pOn">
+          Entwickler mit praktischer Erfahrung in HTML, CSS, JavaScript und
+          Python. Abgeschlossene Webentwicklungsausbildung, PKW Führerschein
+        </p>
+        <div class="meta-row">
+          <span
+            class="meta-chip"
+            onclick="window.open('https://de.wikipedia.org/wiki/Sal%C3%A9')"
+            >📍 <span>Salé, Maroc</span></span
+          >
+          <span class="meta-chip">🎂 <span>11.02.2005</span></span>
+          <span
+            class="meta-chip"
+            onclick="window.location.href = 'mailto:youssef@beddouch.de'"
+            >📧 <span>youssef@beddouch.de</span></span
+          >
+          <span
+            class="meta-chip"
+            onclick="window.location.href = 'tel:+212770225849'"
+            >📞 <span>+212 77 022 5849</span></span
+          >
+          <span
+            class="meta-chip"
+            onclick="window.open('https://github.com/derWomber')"
+            ><i class="fa-brands fa-github white"></i> <span>Gitub</span></span
+          >
+          <span
+            class="meta-chip"
+            onclick="window.open('https://www.instagram.com/derjosephb/')"
+            ><i class="fa-brands fa-instagram white"></i>
+            <span>derjosephb</span></span
+          >
+          <span
+            class="meta-chip"
+            onclick="
+              window.open('https://www.linkedin.com/in/youssef-beddouch/')
+            "
+          >
+            <i class="fa-brands fa-linkedin white"></i>
+            <span>Linkedin</span></span
+          >
+        </div>
+
+        <div class="buttons">
+          <button class="lebenslauf" id="lebenslaufButton">
+            <a
+              href="https://drive.google.com/file/d/1nAQqAtpkes5jXzm0L4pflKdOgYqQwLVE/view?usp=sharing"
+              target="_blank"
+              style="text-decoration: none; color: #000"
+              >⬇ Lebenslauf</a
+            >
+          </button>
+          <button class="contact" id="kontactButton">
+            <a
+              href="https://linktr.ee/JosephYB"
+              target="_blank"
+              style="text-decoration: none; color: var(--warmAcc)"
+              >Kontakt</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="SBS" id="SBS">
+      <div class="skills-title">
+        ——— Joseph HAS_MANY skills | education | languages ———
+      </div>
+      <div class="skills-container">
+        <!-- tech -->
+        <div class="skill-card" id="tachCard">
+          <div class="card-header" style="color: var(--Accent)">
+            ⚙️ TECH SKILLS
+            <span class="pk" style="color: var(--Muted)">PK: skill_id </span>
+          </div>
+
+          <div class="HC">
+            <div class="web">//web</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Javascript</div>
+          </div>
+
+          <div class="PY">
+            <div class="web">//Programming</div>
+            <div class="JS">Python</div>
+          </div>
+
+          <div class="TS">
+            <div class="web">// Tools & Systems</div>
+            <div>Git</div>
+            <div>VS Code</div>
+            <div>Linux CLI</div>
+            <div>MS Office</div>
+            <div>APIs</div>
+          </div>
+        </div>
+        <!-- education -->
+        <div class="skill-card" id="educationCard">
+          <div class="card-header" style="color: var(--WarmAcc)">
+            🎓 EDUCATION<span class="pk">PK: edu_id </span>
+          </div>
+          <div class="education-container">
+            <div class="education-1">
+              <div class="sub-education-dates web">09/2024 — laufend</div>
+              <div class="sub-education-text">
+                <div class="sub-education-text-title">Germanistik Studium</div>
+                <div class="sub-education-text-location muted">
+                  Université Mohammed V, Rabat
+                </div>
+                <div class="sub-education-text-misc orange">
+                  B1 → B2 Vorbereitung &#9889;
+                </div>
+              </div>
+            </div>
+            <div class="education-2">
+              <div class="sub-education-dates web">11/2023 — 05/2024</div>
+              <div class="sub-education-text">
+                <div class="sub-education-text-title">
+                  Webentwicklung Ausbildung
+                </div>
+                <div class="sub-education-text-location muted">
+                  Atlantic Training Center, Rabat
+                </div>
+                <div class="sub-education-text-misc orange">
+                  HTML, CSS, JS, Debugging
+                </div>
+              </div>
+            </div>
+            <div class="education-3">
+              <div class="sub-education-dates web">06/2023</div>
+              <div class="sub-education-text">
+                <div class="sub-education-text-title">
+                  Abitur (Allg. Hochschulreife)
+                </div>
+                <div class="sub-education-text-location muted">
+                  Gymnasium Mouha ou Hammou Zayani, Salé
+                </div>
+                <div class="sub-education-text-misc orange">
+                  Fachrichtung: Physikwissenschaften französische Option
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- languages -->
+        <div class="skill-card" id="languagesCard">
+          <div class="card-header" style="color: var(--Accent)">
+            🌍 LANGUAGES<span class="pk" style="color: var(--Muted)"
+              >PK: lang_id
+            </span>
+          </div>
+          <div class="languages">
+            <div class="arabic">
+              <div class="level">C2</div>
+              <div class="language-title">Arabic 🇲🇦</div>
+              <div class="language-status">MutterSprache</div>
+            </div>
+
+            <div class="arabic">
+              <div class="level">C2</div>
+              <div class="language-title">Englisch 🇬🇧</div>
+              <div class="language-status">Fließend</div>
+            </div>
+
+            <div class="arabic">
+              <div class="level">B1→B2</div>
+              <div class="language-title">Deutsch 🇩🇪</div>
+              <div class="language-status" style="color: var(--WarmAcc)">
+                ⚡ In Vorbereitung
+              </div>
+            </div>
+
+            <div class="arabic">
+              <div class="level">B1</div>
+              <div class="language-title">Französisch 🇫🇷</div>
+              <div class="language-status">Gut</div>
+            </div>
+          </div>
+
+          <div class="hobbies">
+            <div class="web">//Hobbys</div>
+            <div class="items">
+              <div class="hobbys-item">🎮 Gaming</div>
+              <div class="hobbys-item">🥊 kickboxen</div>
+              <div class="hobbys-item">🍳 Kochen</div>
+              <div class="hobbys-item">🥾 Wandern</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projekte" id="projekte">
+      <div class="skills-title">
+        ——— developer HAS_MANY projects | softSkills ———
+      </div>
+
+      <div class="projects-softskill-container">
+        <div class="projects">
+          <div
+            class="card-header"
+            style="color: var(--Accent); font-weight: 700"
+          >
+            🚀 PROJEKTE
+            <span class="pk" style="color: var(--Muted)">PK: proj_id </span>
+          </div>
+
+          <div class="grid">
+            <div class="box">
+              <div class="web2">taskflow.beddouch.de</div>
+              <div class="box-title">TaskFlow</div>
+              <div class="box-discription">
+                Eigenständige Entwicklung einer responsiven Webanwendung zur
+                Aufgabenverwaltung mit Statusverfolgung, Filterung,
+                Prioritätssystem und persistenter Datenspeicherung via
+                LocalStorage.
+              </div>
+              <div class="box-tech">
+                <div class="box-tech-item">HTML</div>
+                <div class="box-tech-item">CSS</div>
+                <div class="box-tech-item">JS</div>
+                <div class="box-tech-item">LocalStorage</div>
+                <div class="box-tech-item">git</div>
+              </div>
+              <div class="box-github-deployed">
+                <button class="box-github-deployed-item">↗ Live</button>
+                <button class="box-github-deployed-item">⌥ GitHub</button>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="web2">beddouch.de</div>
+              <div class="box-title">Portfolio Website</div>
+              <div class="box-discription">
+                Eigenständige Konzeption, Entwicklung und Deployment einer
+                responsiven Portfolio-Website.
+              </div>
+              <div class="box-tech">
+                <div class="box-tech-item">HTML</div>
+                <div class="box-tech-item">CSS</div>
+                <div class="box-tech-item">JS</div>
+                <div class="box-tech-item">Deployment</div>
+              </div>
+              <div class="box-github-deployed">
+                <button class="box-github-deployed-item">↗ Live</button>
+                <button class="box-github-deployed-item">⌥ GitHub</button>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-title">Freelance Web Projects</div>
+              <div class="box-discription">
+                Entwicklung responsiver Websites nach Kundenanforderungen mit
+                Fokus auf UX/UI, Ladezeiten und mobile Optimierung.
+              </div>
+              <div class="box-tech">
+                <div class="box-tech-item">HTML</div>
+                <div class="box-tech-item">CSS</div>
+                <div class="box-tech-item">JS</div>
+              </div>
+              <div class="box-github-deployed"></div>
+            </div>
+
+            <div class="box" id="dashed-box">
+              ➕<br /><br />Nächstes Projekt<br />kommt bald
+            </div>
+          </div>
+        </div>
+        <div class="soft-skills">
+          <div class="card-header" style="color: var(--WarmAcc)">
+            🧠 Soft Skills<span class="pk" style="color: var(--WarmAcc)"
+              >PK: sosk_id
+            </span>
+          </div>
+
+          <div class="SS-container">
+            <div class="SS-item">
+              <div class="SS-title">Eigeninitiative</div>
+              <div class="true">TRUE ✓</div>
+            </div>
+            <div class="SS-item">
+              <div class="SS-title">Mehrsprachige Kommunikation</div>
+              <div class="true">TRUE ✓</div>
+            </div>
+            <div class="SS-item">
+              <div class="SS-title">Kundenorientierung</div>
+              <div class="true">TRUE ✓</div>
+            </div>
+            <div class="SS-item">
+              <div class="SS-title">Internationale Anpassungsfähigkeit</div>
+              <div class="true">TRUE ✓</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="CTA">
+      <div class="container">
+        <div class="cta-t">Bereit für Ihren nächsten Azubi?</div>
+
+        <div class="cta-s">Fachinformatiker AE · Sofort verfügbar</div>
+
+        <div class="meta-row">
+          <span
+            class="meta-chip"
+            onclick="window.location.href = 'mailto:youssef@beddouch.de'"
+            >📧 <span>youssef@beddouch.de</span></span
+          >
+          <span
+            class="meta-chip"
+            onclick="window.location.href = 'tel:+212770225849'"
+            >📞 <span>+212 77 022 5849</span></span
+          >
+          <span
+            class="meta-chip"
+            onclick="window.open('https://github.com/derWomber')"
+            ><i class="fa-brands fa-github white"></i> <span>Gitub</span></span
+          >
+          <span
+            class="meta-chip"
+            onclick="window.open('https://www.instagram.com/derjosephb/')"
+            ><i class="fa-brands fa-instagram white"></i>
+            <span>derjosephb</span></span
+          >
+          <span
+            class="meta-chip"
+            onclick="
+              window.open('https://www.linkedin.com/in/youssef-beddouch/')
+            "
+          >
+            <i class="fa-brands fa-linkedin white"></i>
+            <span>Linkedin</span></span
+          >
+        </div>
+
+        <button class="cta-l" id="lebenslaufButton">
+          <a
+            href="https://drive.google.com/file/d/1nAQqAtpkes5jXzm0L4pflKdOgYqQwLVE/view?usp=sharing"
+            target="_blank"
+            style="text-decoration: none; color: #000"
+            >⬇ Lebenslauf herunterladen</a
+          >
+        </button>
+      </div>
+    </section>
+
+    <footer class="pf-footer">
+      <div class="pf-top">
+        <div class="pf-brand">
+          <p class="name">Youssef Beddouch</p>
+          <p class="tagline">// web developer · salé, ma → Deutschland</p>
+        </div>
+
+        <div class="pf-links">
+          <div class="pf-col">
+            <h4>Projects</h4>
+            <a href="https://beddouch.de">Portfolio Website</a>
+            <a href="https://taskflow.beddouch.de">TaskFlow</a>
+            <a href="https://derwomber.github.io/Portfolio">Portfolio V1</a>
+            <a href="https://v2portfolio.beddouch.de">Portfolio V2</a>
+            <a href="#">Freelance Work</a>
+          </div>
+          <div class="pf-col">
+            <h4>Contact</h4>
+            <a href="mailto:youssef@beddouch.de">youssef@beddouch.de</a>
+            <a href="tel:+212770225849">+212 77 0225 849</a>
+          </div>
+          <div class="pf-col">
+            <h4>Elsewhere</h4>
+            <a href="https://github.com/derwomber" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/youssefbeddouch" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://www.instagram.com/derjosephb/" target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="pf-divider"></div>
+
+      <div class="pf-bottom">
+        <p class="copy">
+          © 2026
+          <a
+            href="https://beddouch.de"
+            target="_blank"
+            style="text-decoration: none"
+            ><span>beddouch.de</span></a
+          >
+          <br />— made with love, a cool playlist, & too many tabs
+        </p>
+        <div class="pf-status">
+          <div class="pf-status-dot"></div>
+          open to opportunities
+        </div>
+        <div class="pf-socials">
+          <a href="https://github.com/derwomber" target="_blank">gh</a>
+          <a href="https://linkedin.com/in/youssefbeddouch" target="_blank"
+            >in</a
+          >
+          <a href="mailto:youssef@beddouch.de">@</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
