@@ -1,0 +1,100 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "CN"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "JP"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "KR"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "VN"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "TH"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "PH"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "ID"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "MY"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "SG"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "TW"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "HK"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "IN"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "PK"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "BD"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "RU"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "BY"}],
+      "destination": "https://watchbutdonotlearn.github.io/",
+      "permanent": false
+    }
+  ]
+}
