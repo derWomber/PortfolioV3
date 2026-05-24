@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <script src="script.js" defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Impressum - Youssef Beddouch</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="Impressum.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
     <nav>
       <ul class="sidebar">
         <li onclick="hideSidebar()">
@@ -24,9 +26,21 @@
               /></svg
           ></a>
         </li>
-        <li><a href="#landing" id="home_sidebar" onclick="hideSidebar()">Startseite</a></li>
-        <li><a href="#SBS" id="education_sidebar" onclick="hideSidebar()">Bildung</a></li>
-        <li><a href="#projekte" id="projects_sidebar" onclick="hideSidebar()">Projekte</a></li>
+        <li>
+          <a href="#landing" id="home_sidebar" onclick="hideSidebar()"
+            >Startseite</a
+          >
+        </li>
+        <li>
+          <a href="#SBS" id="education_sidebar" onclick="hideSidebar()"
+            >Bildung</a
+          >
+        </li>
+        <li>
+          <a href="#projekte" id="projects_sidebar" onclick="hideSidebar()"
+            >Projekte</a
+          >
+        </li>
         <li>
           <select class="language-change" onchange="switchLanguage(this.value)">
             <option value="de">DE 🇩🇪</option>
@@ -71,6 +85,77 @@
         </li>
       </ul>
     </nav>
-    
-</body>
+    <section class="Impressum-container">
+      <div class="container">
+        <a href="/" class="back">← Zurück</a>
+        <h1>Impressum</h1>
+        <p>Angaben gemäß § 5 TMG</p>
+        <br />
+        <p>
+          Youssef Beddouch<br />
+          Salé, Marokko<br />
+          E-Mail: <a href="mailto:youssef@beddouch.de">youssef@beddouch.de</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="pf-footer">
+      <div class="pf-top">
+        <div class="pf-brand">
+          <p class="name">Youssef Beddouch</p>
+          <p class="tagline">// web developer · salé, ma → Deutschland</p>
+        </div>
+
+        <div class="pf-links">
+          <div class="pf-col">
+            <h4>Projects</h4>
+            <a href="https://beddouch.de">Portfolio Website</a>
+            <a href="https://taskflow.beddouch.de">TaskFlow</a>
+            <a href="#">Freelance Work</a>
+          </div>
+          <div class="pf-col">
+            <h4>Contact</h4>
+            <a href="mailto:youssef@beddouch.de">youssef@beddouch.de</a>
+            <a href="tel:+212770225849">+212 77 0225 849</a>
+          </div>
+          <div class="pf-col">
+            <h4>Elsewhere</h4>
+            <a href="https://github.com/derwomber" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/youssefbeddouch" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://www.instagram.com/derjosephb/" target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="pf-divider"></div>
+
+      <div class="pf-bottom">
+        <p class="copy">
+          © 2026
+          <a
+            href="https://beddouch.de"
+            target="_blank"
+            style="text-decoration: none"
+            ><span>beddouch.de</span></a
+          >
+          <br />— made with love, a cool playlist, & too many tabs
+        </p>
+        <div class="pf-status">
+          <div class="pf-status-dot"></div>
+          open to opportunities
+        </div>
+        <div class="pf-socials">
+          <a href="https://github.com/derwomber" target="_blank">gh</a>
+          <a href="https://linkedin.com/in/youssefbeddouch" target="_blank"
+            >in</a
+          >
+          <a href="mailto:youssef@beddouch.de">@</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
