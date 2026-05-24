@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Youssef Beddouch</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#fff"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#landing" id="home_sidebar" onclick="hideSidebar()">Startseite</a></li>
+        <li><a href="#SBS" id="education_sidebar" onclick="hideSidebar()">Bildung</a></li>
+        <li><a href="#projekte" id="projects_sidebar" onclick="hideSidebar()">Projekte</a></li>
+        <li>
+          <select class="language-change" onchange="switchLanguage(this.value)">
+            <option value="de">DE 🇩🇪</option>
+            <option value="en">EN 🇬🇧</option>
+            <option value="fr">FR 🇫🇷</option>
+          </select>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div class="logo">JosephB&nbsp;<span>// Youssef Beddouch</span></div>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#landing" id="home"> <span> Startseite</span></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#SBS" id="education"><span>Bildung</span></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#projekte" id="projects"><span>Projekte</span></a>
+        </li>
+        <li class="hideOnMobile">
+          <select class="language-change" onchange="switchLanguage(this.value)">
+            <option value="de" onclick="hideSidebar()">DE 🇩🇪</option>
+            <option value="en" onclick="hideSidebar()">EN 🇬🇧</option>
+            <option value="fr" onclick="hideSidebar()">FR 🇫🇷</option>
+          </select>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#fff"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    
+</body>
+</html>
