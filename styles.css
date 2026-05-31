@@ -282,6 +282,16 @@ nav li:first-child {
   letter-spacing: 3px;
 }
 
+
+.Audio-Player{
+  fill: var(--Accent);
+  transition: 0.2s ease-in-out;
+}
+
+.Audio-Player:hover{
+  transform: scale(1.2);
+}
+
 .role {
   width: 100%;
   display: flex;
