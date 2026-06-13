@@ -222,7 +222,7 @@ nav li:first-child {
 }
 
 .container::after {
-  content: "ENTITY: Azubi_Joseph";
+  content: "ENTITY: Joseph";
   position: absolute;
   top: -12px;
   left: 30px;
